@@ -82,7 +82,7 @@ p { margin: 0 0 1em; }
   border-bottom: 1px solid var(--line);
 }
 .hdr .wrap { display: flex; align-items: center; gap: .75rem; min-height: 68px; }
-.logo { margin-right: auto; font: 600 1.35rem/1 var(--serif); color: var(--ink); text-decoration: none; white-space: nowrap; }
+.logo { display: inline-flex; align-items: center; gap: .6rem; margin-right: auto; font: 600 1.35rem/1 var(--serif); color: var(--ink); text-decoration: none; white-space: nowrap; }
 .logo em {
   font: 500 .7rem/1 var(--sans); font-style: normal; letter-spacing: .2em; text-transform: uppercase;
   color: var(--teal); margin-left: .35rem; vertical-align: middle;
@@ -497,3 +497,8 @@ a.card h3 { color: var(--ink); }
   .js .reveal { opacity: 1; transform: none; }
   .btn:hover, a.card:hover { transform: none; }
 }
+
+/* logo mark */
+.logo-mark { width: 34px; height: 34px; flex: 0 0 34px; display: block; border-radius: 10px; }
+.logo-txt { display: inline-flex; align-items: baseline; gap: .28rem; }
+@media (max-width: 420px) { .logo-mark { width: 30px; height: 30px; flex-basis: 30px; } }
