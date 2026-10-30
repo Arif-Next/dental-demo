@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a visit — Smile Care Dental, Dhanmondi</title>
+<meta name="description" content="Three steps, about 40 seconds. We confirm on WhatsApp within 30 minutes during clinic hours. House 27, Road 8, Dhanmondi, Dhaka 1205.">
+<meta name="theme-color" content="#0E4F4A">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Smile Care Dental">
+<meta property="og:title" content="Book a visit — Smile Care Dental">
+<meta property="og:description" content="Three steps, about 40 seconds. We confirm on WhatsApp within 30 minutes during clinic hours.">
+<meta property="og:url" content="{{SITE_URL}}/contact.html">
+<meta property="og:image" content="{{SITE_URL}}/assets/img/consultation.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&amp;family=Inter:wght@400;500;600&amp;display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+<script>document.documentElement.className='js'</script>
+<script src="assets/js/main.js" defer></script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        { "@type": "ListItem", "position": 1, "name": "Home", "item": "{{SITE_URL}}/index.html" },
+        { "@type": "ListItem", "position": 2, "name": "Book a visit", "item": "{{SITE_URL}}/contact.html" }
+      ]
+    },
+    {
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What does the first visit cost?", "acceptedAnswer": { "@type": "Answer", "text": "৳500 for a consultation and digital X-ray. If you start treatment the same day, that ৳500 comes off your bill." } },
+        { "@type": "Question", "name": "Can I cancel or reschedule?", "acceptedAnswer": { "@type": "Answer", "text": "Free to reschedule up to 4 hours before your slot." } },
+        { "@type": "Question", "name": "What should I bring?", "acceptedAnswer": { "@type": "Answer", "text": "Any previous X-rays, a list of medicines you take, and your BP/diabetes status." } }
+      ]
+    }
+  ]
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="hdr">
+  <div class="wrap">
+    <a class="logo" href="index.html">Smile Care <em>Dental</em></a>
+    <nav class="nav" aria-label="Main">
+      <ul>
+        <li><a href="treatments.html">Treatments</a></li>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="smile-gallery.html">Smile Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+    <a class="hdr-tel" href="tel:+8801712345678">+880 1712-345678</a>
+    <a class="btn btn-p" href="contact.html">Book a visit</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="drawer"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7h16M4 12h16M4 17h16"/></svg></button>
+  </div>
+</header>
+<div class="scrim" aria-hidden="true"></div>
+<div class="drawer" id="drawer" role="dialog" aria-modal="true" aria-label="Menu" aria-hidden="true">
+  <div class="drawer-top"><span class="logo">Smile Care <em>Dental</em></span><button class="burger drawer-x" type="button" aria-label="Close menu"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+  <nav aria-label="Mobile">
+    <ul>
+      <li><a href="treatments.html">Treatments</a></li>
+      <li><a href="prices.html">Prices</a></li>
+      <li><a href="smile-gallery.html">Smile Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+  <a class="btn btn-p" href="contact.html">Book a visit</a>
+  <a class="btn btn-o" href="https://wa.me/8801712345678">WhatsApp us</a>
+  <p class="fine">Call <a href="tel:+8801712345678">+880 1712-345678</a><br>Sat–Thu 10:00–20:00 · Fri closed · emergency line answered 24/7</p>
+</div>
+
+<main id="main">
+  <header class="phead">
+    <div class="wrap">
+      <nav class="crumbs" aria-label="Breadcrumb"><ol><li><a href="index.html">Home</a></li><li aria-current="page">Book a visit</li></ol></nav>
+      <h1>Book a visit</h1>
+      <p class="lead">Three steps, about 40 seconds. We confirm on WhatsApp within 30 minutes during clinic hours.</p>
+    </div>
+  </header>
+
+  <section class="sec" aria-label="Booking">
+    <div class="wrap book">
+      <div>
+        <!-- No backend: the form builds a wa.me link and the WhatsApp hand-off is the delivery mechanism (see main.js). -->
+        <form id="booking" class="form" novalidate aria-label="Booking request">
+          <ol class="prog" aria-label="Booking progress">
+            <li aria-current="step"><b>1</b> Service</li>
+            <li><b>2</b> Time</li>
+            <li><b>3</b> Details</li>
+          </ol>
+
+          <fieldset class="step" id="s1" tabindex="-1" aria-describedby="e-service">
+            <legend>What do you need?</legend>
+            <div class="opts">
+              <div class="opt"><input type="radio" id="sv1" name="service" value="Consultation &amp; check-up"><label for="sv1">Consultation &amp; check-up</label></div>
+              <div class="opt"><input type="radio" id="sv2" name="service" value="Scaling &amp; polishing"><label for="sv2">Scaling &amp; polishing</label></div>
+              <div class="opt"><input type="radio" id="sv3" name="service" value="Root canal"><label for="sv3">Root canal</label></div>
+              <div class="opt"><input type="radio" id="sv4" name="service" value="Implant"><label for="sv4">Implant</label></div>
+              <div class="opt"><input type="radio" id="sv5" name="service" value="Braces / aligners"><label for="sv5">Braces / aligners</label></div>
+              <div class="opt"><input type="radio" id="sv6" name="service" value="Whitening"><label for="sv6">Whitening</label></div>
+              <div class="opt"><input type="radio" id="sv7" name="service" value="Children's dentistry"><label for="sv7">Children's dentistry</label></div>
+              <div class="opt"><input type="radio" id="sv8" name="service" value="Emergency — pain today"><label for="sv8">Emergency — pain today</label></div>
+            </div>
+            <p class="err" id="e-service" aria-live="polite"></p>
+            <div class="fnav"><button type="button" class="btn btn-p" data-go="1">Continue</button></div>
+          </fieldset>
+
+          <fieldset class="step" id="s2" tabindex="-1">
+            <legend>When suits you?</legend>
+            <div class="fld">
+              <label for="f-date">Preferred date</label>
+              <input type="date" id="f-date" name="date" aria-describedby="e-date d-note">
+              <p class="err" id="e-date" aria-live="polite"></p>
+            </div>
+            <fieldset aria-describedby="e-time">
+              <legend>Preferred time</legend>
+              <div class="opts three">
+                <div class="opt"><input type="radio" id="tm1" name="time" value="Morning (10:00–13:00)"><label for="tm1">Morning (10:00–13:00)</label></div>
+                <div class="opt"><input type="radio" id="tm2" name="time" value="Afternoon (13:00–17:00)"><label for="tm2">Afternoon (13:00–17:00)</label></div>
+                <div class="opt"><input type="radio" id="tm3" name="time" value="Evening (17:00–20:00)"><label for="tm3">Evening (17:00–20:00)</label></div>
+              </div>
+              <p class="err" id="e-time" aria-live="polite"></p>
+            </fieldset>
+            <p class="hint" id="d-note">Friday is closed. Emergency requests are handled by phone.</p>
+            <div class="fnav"><button type="button" class="btn btn-o" data-go="0">Back</button><button type="button" class="btn btn-p" data-go="2">Continue</button></div>
+          </fieldset>
+
+          <fieldset class="step" id="s3" tabindex="-1">
+            <legend>Your details</legend>
+            <div class="fld">
+              <label for="f-name">Name</label>
+              <input type="text" id="f-name" name="name" autocomplete="name" aria-describedby="e-name">
+              <p class="err" id="e-name" aria-live="polite"></p>
+            </div>
+            <div class="fld">
+              <label for="f-phone">Mobile</label>
+              <input type="tel" id="f-phone" name="phone" autocomplete="tel" inputmode="tel" aria-describedby="h-phone e-phone">
+              <p class="hint" id="h-phone">01… or +8801… (Bangla digits are fine)</p>
+              <p class="err" id="e-phone" aria-live="polite"></p>
+            </div>
+            <div class="fld">
+              <label for="f-notes">Notes <span class="opt-l">(optional)</span></label>
+              <textarea id="f-notes" name="notes" rows="3" placeholder="Anything we should know? Pain, anxiety, previous treatment"></textarea>
+            </div>
+            <div class="fnav"><button type="button" class="btn btn-o" data-go="1">Back</button><button type="submit" class="btn btn-p">Send booking request</button></div>
+          </fieldset>
+          <noscript><p class="fine">Prefer to call? <a href="tel:+8801712345678">+880 1712-345678</a></p></noscript>
+        </form>
+
+        <div id="booked" class="form done" hidden>
+          <h2 tabindex="-1">Request ready — one more tap.</h2>
+          <p>We've prepared your booking message. Send it on WhatsApp and we'll confirm your slot.</p>
+          <a id="wa-send" class="btn btn-p" href="https://wa.me/8801712345678" target="_blank" rel="noopener">Send on WhatsApp</a>
+          <p class="fine">Prefer to call? <a href="tel:+8801712345678">+880 1712-345678</a></p>
+          <button type="button" class="linkbtn" id="edit">Edit request</button>
+        </div>
+      </div>
+
+      <aside class="grid" aria-label="Other ways to reach us">
+        <div class="card ccard">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+          <h2>Call</h2><a href="tel:+8801712345678">+880 1712-345678</a><p>Sat–Thu 10:00–20:00</p>
+        </div>
+        <div class="card ccard">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.7-4.6A8.5 8.5 0 1 1 8 19.6z"/></svg></span>
+          <h2>WhatsApp</h2><a href="https://wa.me/8801712345678">+880 1712-345678</a><p>Message us — photos welcome</p>
+        </div>
+        <div class="card ccard">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 2 20h20z"/><path d="M12 10v4M12 17h.01"/></svg></span>
+          <h2>Emergency, 24/7</h2><a href="tel:+8801712345678">+880 1712-345678</a>
+        </div>
+        <div class="card ccard">
+          <span class="ico"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s7-6.2 7-11.5a7 7 0 1 0-14 0C5 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></svg></span>
+          <h2>Visit</h2><p>House 27, Road 8, Dhanmondi, Dhaka 1205</p>
+          <a href="https://www.google.com/maps/dir/?api=1&amp;destination=House+27,+Road+8,+Dhanmondi,+Dhaka+1205" target="_blank" rel="noopener">Get directions</a>
+        </div>
+      </aside>
+    </div>
+  </section>
+
+  <section class="sec sec-white" id="directions" aria-labelledby="dir-h">
+    <div class="wrap contact">
+      <a class="map reveal" href="https://www.google.com/maps/search/?api=1&amp;query=House+27%2C+Road+8%2C+Dhanmondi%2C+Dhaka+1205" target="_blank" rel="noopener"><span class="map-body"><b>Smile Care Dental</b><span>House 27, Road 8, Dhanmondi, Dhaka 1205</span><span class="map-cta">Open in Google Maps →</span></span></a>
+      <div class="reveal">
+        <h2 id="dir-h">Getting here</h2>
+        <ul class="ticks">
+          <li>5 minutes' walk from Dhanmondi Road 27 bus stop</li>
+          <li>Two-wheeler and car parking in front of the building</li>
+          <li>Lift to the 3rd floor</li>
+        </ul>
+        <ul class="info">
+          <li><strong>Address</strong>House 27, Road 8, Dhanmondi, Dhaka 1205</li>
+          <li><strong>Hours</strong>Sat–Thu 10:00–20:00 · Fri closed · emergency line answered 24/7</li>
+          <li><strong>Languages</strong>English · বাংলা · Hindi</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="intl-h">
+    <div class="wrap">
+      <div class="band reveal">
+        <div>
+          <h2 id="intl-h">Travelling to Dhaka for treatment?</h2>
+          <p>We plan it before you fly: send your X-rays or photos on WhatsApp for a written treatment plan and quote, book a video consultation, and we'll arrange hotel and airport pickup. The clinic is 25 minutes from Hazrat Shahjalal International Airport.</p>
+        </div>
+        <ul class="ticks two" style="margin:0">
+          <li>Virtual consult before you travel</li>
+          <li>Written quote in English</li>
+          <li>Treatment compressed into one trip</li>
+          <li>Follow-up by video after you return</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec" aria-labelledby="faq-h" style="padding-top:0">
+    <div class="wrap">
+      <div class="head reveal"><h2 id="faq-h">Before your visit</h2></div>
+      <div class="acc reveal">
+        <div class="acc-item"><h3><button type="button" id="fq1" aria-expanded="false" aria-controls="fa1">What does the first visit cost?</button></h3><div class="acc-panel" id="fa1" role="region" aria-labelledby="fq1"><p>৳500 for a consultation and digital X-ray. If you start treatment the same day, that ৳500 comes off your bill.</p></div></div>
+        <div class="acc-item"><h3><button type="button" id="fq2" aria-expanded="false" aria-controls="fa2">Can I cancel or reschedule?</button></h3><div class="acc-panel" id="fa2" role="region" aria-labelledby="fq2"><p>Free to reschedule up to 4 hours before your slot.</p></div></div>
+        <div class="acc-item"><h3><button type="button" id="fq3" aria-expanded="false" aria-controls="fa3">What should I bring?</button></h3><div class="acc-panel" id="fa3" role="region" aria-labelledby="fq3"><p>Any previous X-rays, a list of medicines you take, and your BP/diabetes status.</p></div></div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="fgrid">
+      <div><a class="logo" href="index.html">Smile Care <em>Dental</em></a><p>Dhanmondi's dental clinic since 2012.</p></div>
+      <nav aria-label="Treatments"><h2>Treatments</h2><ul>
+        <li><a href="treatments.html#scaling">Scaling &amp; polishing</a></li>
+        <li><a href="treatments.html#root-canal">Root canal (RCT)</a></li>
+        <li><a href="treatments.html#implants">Dental implants</a></li>
+        <li><a href="treatments.html#braces">Braces &amp; clear aligners</a></li>
+        <li><a href="treatments.html#whitening">Teeth whitening</a></li>
+        <li><a href="treatments.html#children">Children's dentistry</a></li>
+      </ul></nav>
+      <nav aria-label="Clinic"><h2>Clinic</h2><ul>
+        <li><a href="prices.html">Prices</a></li>
+        <li><a href="smile-gallery.html">Smile Gallery</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+      <div><h2>Visit</h2><ul>
+        <li>House 27, Road 8, Dhanmondi, Dhaka 1205</li>
+        <li>Sat–Thu 10:00–20:00 · Fri closed</li>
+        <li>Call: <a href="tel:+8801712345678">+880 1712-345678</a></li>
+        <li>WhatsApp: <a href="https://wa.me/8801712345678">+880 1712-345678</a></li>
+      </ul></div>
+    </div>
+    <div class="fbot">
+      <p>© 2026 Smile Care Dental. All rights reserved.</p>
+      <p>Privacy</p>
+      <p>Terms</p>
+      <p class="disc">Medical disclaimer: this site is for information only and is not a substitute for a consultation.</p>
+    </div>
+  </div>
+</footer>
+<nav class="mbar" aria-label="Quick actions">
+  <a href="tel:+8801712345678"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>Call</a>
+  <a href="https://wa.me/8801712345678"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 21l1.7-4.6A8.5 8.5 0 1 1 8 19.6z"/></svg>WhatsApp</a>
+  <a class="book" href="contact.html"><svg class="i" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M16 3v4M8 3v4M3 10h18"/></svg>Book</a>
+</nav>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Smile Care Dental — demo sites</title>
+<meta name="description" content="Two demo clinic websites: an English six-page site and a Bangla four-page site.">
+<style>
+  :root{--ink:#101820;--soft:#4b5a63;--ivory:#fbf8f4;--teal:#0e4f4a;--tint:#eaf3f0;--line:#e7e1d8;--brass:#b98953;
+        --serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--ivory);color:var(--ink);font:400 1rem/1.65 var(--sans)}
+  .wrap{max-width:1040px;margin:0 auto;padding:4rem 1.5rem 5rem}
+  .eyebrow{font-size:.78rem;letter-spacing:.14em;text-transform:uppercase;color:var(--brass);font-weight:600}
+  h1{font:500 clamp(2rem,5vw,3.1rem)/1.1 var(--serif);margin:.6rem 0 1rem;letter-spacing:-.01em}
+  .lead{color:var(--soft);max-width:60ch;margin:0 0 2.5rem}
+  .grid{display:grid;gap:1.5rem}
+  @media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+  a.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);
+         border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(16,24,32,.06);transition:transform .2s ease,box-shadow .2s ease}
+  a.card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(16,24,32,.1)}
+  .shot{aspect-ratio:16/10;background:var(--tint);overflow:hidden}
+  .shot img{width:100%;height:100%;object-fit:cover;display:block}
+  .body{padding:1.4rem 1.5rem 1.6rem}
+  .body h2{font:500 1.35rem/1.25 var(--serif);margin:0 0 .35rem}
+  .body p{margin:0;color:var(--soft);font-size:.95rem}
+  .tag{display:inline-block;margin-bottom:.7rem;font-size:.72rem;letter-spacing:.1em;text-transform:uppercase;
+       color:var(--teal);background:var(--tint);padding:.3rem .6rem;border-radius:99px;font-weight:600}
+  footer{margin-top:3rem;padding-top:1.5rem;border-top:1px solid var(--line);color:var(--soft);font-size:.86rem}
+  footer a{color:var(--teal)}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <p class="eyebrow">ArifNext · demo</p>
+  <h1>Smile Care Dental — two demo clinic sites</h1>
+  <p class="lead">The same fictional Dhanmondi practice built twice: an English six-page site made after
+  scanning nine live Dhaka dental sites, and a Bangla four-page version. Both are static, load in about a
+  second on mobile, and use placeholder content.</p>
+
+  <div class="grid">
+    <a class="card" href="en/">
+      <span class="shot"><img src="en/assets/img/consultation.jpg" width="1200" height="900" alt="Dentist explaining a treatment plan to a patient"></span>
+      <span class="body">
+        <span class="tag">English · 6 pages</span>
+        <h2>English demo</h2>
+        <p>Published price list, 3-step booking that sends to WhatsApp, before/after gallery, team and FAQ.</p>
+      </span>
+    </a>
+    <a class="card" href="bn/">
+      <span class="shot"><img src="bn/assets/img/hero-chair.jpg" width="1200" height="800" alt="Bright dental treatment room"></span>
+      <span class="body">
+        <span class="tag">বাংলা · ৪ পেজ</span>
+        <h2>Bangla demo</h2>
+        <p>বাংলা-ফার্স্ট ক্লিনিক সাইট — সেবা, ডাক্তারের প্রোফাইল, রোগীর মতামত, অ্যাপয়েন্টমেন্ট ফর্ম।</p>
+      </span>
+    </a>
+  </div>
+
+  <footer>
+    Demo content — names, reviews and prices are illustrative, photos are stock. Built by
+    <a href="https://arif-next.github.io/dental-demo/en/">ArifNext</a>.
+  </footer>
+</div>
+</body>
+</html>
