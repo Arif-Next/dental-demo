@@ -13,6 +13,7 @@
     drawer.classList.toggle('is-open', open);
     scrim.classList.toggle('is-open', open);
     drawer.setAttribute('aria-hidden', String(!open));
+    drawer.inert = !open;
     burger.setAttribute('aria-expanded', String(open));
     b.classList.toggle('locked', open);
     if (mbar) mbar.classList.toggle('is-hidden', open);
@@ -30,7 +31,9 @@
       if (e.shiftKey && d.activeElement === first) { e.preventDefault(); last.focus(); }
       else if (!e.shiftKey && d.activeElement === last) { e.preventDefault(); first.focus(); }
     });
-    matchMedia('(min-width: 1024px)').addListener(function (m) { if (m.matches && isOpen()) setDrawer(false); });
+    var mq = matchMedia('(min-width: 1024px)');
+    var onMq = function (m) { if (m.matches && isOpen()) setDrawer(false); };
+    if (mq.addEventListener) mq.addEventListener('change', onMq); else mq.addListener(onMq);
   }
 
   /* ---- Sticky mobile bar: hide on scroll down, show on scroll up ---- */
@@ -58,6 +61,24 @@
     }, { rootMargin: '0px 0px -8% 0px' });
     rv.forEach(function (el) { io.observe(el); });
   } else rv.forEach(function (el) { el.classList.add('in'); });
+
+  /* ---- Treatments jump nav: highlight the section in view ---- */
+  var jump = qa('.jump a');
+  if (jump.length && 'IntersectionObserver' in window) {
+    var byId = {};
+    jump.forEach(function (a) { byId[a.getAttribute('href').slice(1)] = a; });
+    var jo = new IntersectionObserver(function (es) {
+      es.forEach(function (e) {
+        if (!e.isIntersecting) return;
+        jump.forEach(function (a) { a.removeAttribute('aria-current'); });
+        var a = byId[e.target.id];
+        a.setAttribute('aria-current', 'true');
+        var ul = a.closest('ul'), r = a.getBoundingClientRect(), u = ul.getBoundingClientRect();
+        if (r.left < u.left || r.right > u.right) ul.scrollLeft += r.left - u.left - 16;
+      });
+    }, { rootMargin: '-35% 0px -55% 0px' });
+    Object.keys(byId).forEach(function (id) { var t = d.getElementById(id); if (t) jo.observe(t); });
+  }
 
   /* ---- FAQ accordion (native buttons → Enter/Space work) ---- */
   qa('.acc button[aria-controls]').forEach(function (btn) {
@@ -181,6 +202,17 @@
     ];
     if (val('notes')) msg.push('Notes: ' + val('notes'));
     q('#wa-send').href = 'https://wa.me/' + WA + '?text=' + encodeURIComponent(msg.join('\n'));
+    // Show the patient exactly what will be sent (textContent only — never innerHTML).
+    var sum = q('#summary');
+    if (sum) {
+      sum.textContent = '';
+      [['Service', val('service')], ['Date', day], ['Time', val('time')], ['Name', val('name')], ['Mobile', phone(val('phone'))], ['Notes', val('notes')]].forEach(function (r) {
+        if (!r[1]) return;
+        var row = d.createElement('div'), dt = d.createElement('dt'), dd = d.createElement('dd');
+        dt.textContent = r[0]; dd.textContent = r[1];
+        row.appendChild(dt); row.appendChild(dd); sum.appendChild(row);
+      });
+    }
     form.hidden = true;
     var ok = q('#booked');
     ok.hidden = false;

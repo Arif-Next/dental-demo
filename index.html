@@ -5,6 +5,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Smile Care Dental — demo sites</title>
 <meta name="description" content="Two demo clinic websites: an English six-page site and a Bangla four-page site.">
+<link rel="canonical" href="https://arif-next.github.io/dental-demo/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Smile Care Dental — demo sites">
+<meta property="og:description" content="Two demo clinic websites: an English six-page site and a Bangla four-page site.">
+<meta property="og:url" content="https://arif-next.github.io/dental-demo/">
+<meta property="og:image" content="https://arif-next.github.io/dental-demo/en/assets/img/hero-chair.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="en/assets/img/favicon.svg" type="image/svg+xml">
+<meta name="theme-color" content="#0E4F4A">
 <style>
   :root{--ink:#101820;--soft:#4b5a63;--ivory:#fbf8f4;--teal:#0e4f4a;--tint:#eaf3f0;--line:#e7e1d8;--brass:#b98953;
         --serif:"Fraunces",Georgia,serif;--sans:"Inter",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
@@ -19,6 +28,8 @@
   a.card{display:flex;flex-direction:column;text-decoration:none;color:inherit;background:#fff;border:1px solid var(--line);
          border-radius:18px;overflow:hidden;box-shadow:0 6px 24px rgba(16,24,32,.06);transition:transform .2s ease,box-shadow .2s ease}
   a.card:hover{transform:translateY(-2px);box-shadow:0 12px 32px rgba(16,24,32,.1)}
+  a.card:focus-visible{outline:3px solid var(--teal);outline-offset:3px}
+  @media(prefers-reduced-motion:reduce){a.card{transition:none}a.card:hover{transform:none}}
   .shot{aspect-ratio:16/10;background:var(--tint);overflow:hidden}
   .shot img{width:100%;height:100%;object-fit:cover;display:block}
   .body{padding:1.4rem 1.5rem 1.6rem}
@@ -31,7 +42,7 @@
 </style>
 </head>
 <body>
-<div class="wrap">
+<main class="wrap">
   <p class="eyebrow">ArifNext · demo</p>
   <h1>Smile Care Dental — two demo clinic sites</h1>
   <p class="lead">The same fictional Dhanmondi practice built twice: an English six-page site made after
@@ -40,7 +51,7 @@
 
   <div class="grid">
     <a class="card" href="en/">
-      <span class="shot"><img src="en/assets/img/consultation.jpg" width="1200" height="900" alt="Dentist explaining a treatment plan to a patient"></span>
+      <span class="shot"><img src="en/assets/img/consultation-1200.webp" srcset="en/assets/img/consultation-800.webp 800w, en/assets/img/consultation-1200.webp 1200w" sizes="(min-width: 1024px) 600px, 100vw" width="1200" height="900" alt="Dentist explaining a treatment plan to a patient"></span>
       <span class="body">
         <span class="tag">English · 6 pages</span>
         <h2>English demo</h2>
@@ -48,7 +59,7 @@
       </span>
     </a>
     <a class="card" href="bn/">
-      <span class="shot"><img src="bn/assets/img/hero-chair.jpg" width="1200" height="800" alt="Bright dental treatment room"></span>
+      <span class="shot"><img src="bn/assets/img/hero-chair-1200.webp" srcset="bn/assets/img/hero-chair-800.webp 800w, bn/assets/img/hero-chair-1200.webp 1200w" sizes="(min-width: 1024px) 600px, 100vw" width="1200" height="800" alt="Bright dental treatment room"></span>
       <span class="body">
         <span class="tag">বাংলা · ৪ পেজ</span>
         <h2>Bangla demo</h2>
@@ -59,8 +70,8 @@
 
   <footer>
     Demo content — names, reviews and prices are illustrative, photos are stock. Built by
-    <a href="https://arif-next.github.io/dental-demo/en/">ArifNext</a>.
+    ArifNext.
   </footer>
-</div>
+</main>
 </body>
 </html>
